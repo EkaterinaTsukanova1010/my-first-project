@@ -12,6 +12,8 @@ public class AuthorizationTests {
     }
 
     @Test
+
+
     void test01LoginSuccess() {
         // Правильный логин и пароль
         $("#username").setValue("standard_user");
