@@ -10,7 +10,7 @@ public class FourthLoginTests {
 
     @ParameterizedTest
     @ValueSource(strings = {"100", "500", "1000", "100000", "100001"})
-    public void testCommissionCalculator(String amount) {
+    void test01CommissionCalculator(String amount) {
         open("https://slqa.ru/cases/fc/v01/");
         $("input").setValue(amount);
         $("input[type='submit']").click();
